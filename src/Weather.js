@@ -14,7 +14,7 @@ export default function Weather (){
       <p className="m-2">Results for Lexington, KY <a href="/">choose area</a></p>
    <div className="row">
     <div className="col-3">
-       <h1> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"/> 21°C</h1>
+       <h1> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloud"/> 21°C</h1>
     </div>
    
         <div className="col-3">
