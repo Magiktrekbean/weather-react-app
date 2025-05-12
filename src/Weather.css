@@ -12,7 +12,7 @@
     font-family: "Roboto",Arial,sans-serif;
     font-size: 14px;
 }
-.Weather p1 span{
+.Weather .place span{
 color: #5e5e5e; 
 }
 .Weather a{
@@ -45,8 +45,10 @@ color: #202124;
 font-size: 22px;
 font-weight: 400;
 }
-.Weather p2{
+.Weather .time{
 color: #5e5e5e;
 font-size: 16px;
+display: flex;
+justify-content: end;
 }
 
