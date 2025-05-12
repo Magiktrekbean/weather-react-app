@@ -35,7 +35,7 @@ function handleSubmit(event) {
   const DateDisplay = ({ timestamp }) => {
       const date = new Date(timestamp * 1000);
       return (
-        <span className="text-end">{formatDay(timestamp)} {formatDate(date)}</span>
+        <span >{formatDay(timestamp)} {formatDate(date)}</span>
       );
   };
 function updateCity(event) {
@@ -67,7 +67,7 @@ if (data.ready){
         <input type="submit" value={"Search"} className="btn btn-primary w-100 "/>
       </div></div></form>
       
-      <p className ="m-1 place"> <span>Results for</span> {city}, {data.country} · <a href="/" target="blank">Choose area</a></p>
+      <p className ="m-1 place"> <span>Results for</span> {data.city}, {data.country} · <a href="/" target="blank">Choose area</a></p>
    <div className="row">
     <div className="col-3">
      <h1 className="d-flex align-items-center"> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloud" /> {Math.round(data.temperature)}<span>°C</span></h1>
@@ -80,7 +80,7 @@ if (data.ready){
             <li>Wind: {data.wind} km/h</li>
             </ul>
         </div>
-        <div className="col-5 ">
+        <div className="col-5 text-end ">
             <h2 className="d-flex justify-content-end">Weather</h2>
                   <span className="time"> <DateDisplay timestamp={data.time}/><br /> Cloudy</span>
         </div> 
@@ -88,7 +88,7 @@ if (data.ready){
     </div> <hr/>
      </div>);} else {
       const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
-      let city = "null"
+    let city = "Dry Ridge";
       let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(showData);
       return "Loading";
