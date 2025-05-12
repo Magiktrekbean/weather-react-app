@@ -10,7 +10,10 @@ const [data, setData] = useState({
     humidity: null,
     wind: null,
     country: "",
-time: null});
+time: null,
+icon:"",
+iconUrl: null,
+});
 const [city, setCity] = useState("");
 const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
 function handleSubmit(event) {
@@ -51,7 +54,9 @@ setData({
     humidity: response.data.temperature.humidity,
     wind: response.data.wind.speed,
     country: response.data.country,
-    time: response.data.time
+    time: response.data.time,
+    iconUrl:response.data.condition.icon_url,
+    icon: response.data.condition.icon
 });
 
 } 
@@ -74,7 +79,7 @@ if (data.ready){
       <p className ="m-1"> <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
    <div className="row">
     <div className="col-3">
-     <h1 className="d-flex align-items-center"> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloud" /> {Math.round(data.temperature)}<span>°C</span></h1>
+     <h1 className="d-flex align-items-center"> <img src={data.iconUrl} alt={data.icon} /> {Math.round(data.temperature)}<span>°C</span></h1>
     </div>
    
         <div className="col-4 ps-4">
@@ -86,7 +91,7 @@ if (data.ready){
         </div>
         <div className="col-5 text-end ">
             <h2 className="d-flex justify-content-end">Weather</h2>
-                  <span className="time"> <DateDisplay timestamp={data.time}/><br /> Cloudy</span>
+                  <span className="time"> <DateDisplay timestamp={data.time}/><br /> {data.description}</span>
         </div> 
 
     </div> <hr/>
