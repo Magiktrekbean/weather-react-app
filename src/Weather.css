@@ -1,0 +1,52 @@
+.Weather form{
+    margin-bottom: 25px;
+
+
+} 
+.Weather .row{
+    margin-top: 25px;
+}
+.Weather p1 {
+    color:black;
+    font-weight: 700;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 14px;
+}
+.Weather p1 span{
+color: #5e5e5e; 
+}
+.Weather a{
+text-decoration: none;
+}
+.Weather img {
+width: 60px;
+
+}
+.Weather h1 {
+font-size: 48px;
+color: #202124;
+font-weight: 400;
+}
+.Weather h1 span{
+ font-size: 16px;
+position: relative;
+top:-10px;
+padding-left: 3px;
+}
+
+.Weather ul{
+color: #5e5e5e;
+font-size: 12px;
+padding-left: 9px;
+padding-top: 6px;
+}
+.Weather h2 {
+color: #202124;
+font-size: 22px;
+font-weight: 400;
+}
+.Weather p2{
+color: #5e5e5e;
+font-size: 16px;
+}
+
