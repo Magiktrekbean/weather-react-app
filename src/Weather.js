@@ -57,7 +57,11 @@ setData({
 } 
 
 if (data.ready){
+    function showAlert() {
+    alert("Choose an area");
+}
     return( <div className="Weather">
+       
       <form onSubmit={handleSubmit} >
         <div className="row">
         <div className="col-9">
@@ -67,7 +71,7 @@ if (data.ready){
         <input type="submit" value={"Search"} className="btn btn-primary w-100 "/>
       </div></div></form>
       
-      <p className ="m-1 place"> <span>Results for</span> {data.city}, {data.country} · <a href="/" target="blank">Choose area</a></p>
+      <p className ="m-1"> <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
    <div className="row">
     <div className="col-3">
      <h1 className="d-flex align-items-center"> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloud" /> {Math.round(data.temperature)}<span>°C</span></h1>

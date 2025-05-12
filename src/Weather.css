@@ -6,13 +6,13 @@
 .Weather .row{
     margin-top: 25px;
 }
-.Weather p1 {
-    color:black;
+.Weather p {
+    color: #1f1f1f;;
     font-weight: 700;
     font-family: "Roboto",Arial,sans-serif;
     font-size: 14px;
 }
-.Weather .place span{
+.Weather p span{
 color: #5e5e5e; 
 }
 .Weather a{
@@ -26,6 +26,12 @@ width: 60px;
 font-size: 48px;
 color: #202124;
 font-weight: 400;
+}
+@media (max-width:1124px) {
+ .Weather h1{
+    font-size: 20px;
+ }   
+    
 }
 .Weather h1 span{
  font-size: 16px;
