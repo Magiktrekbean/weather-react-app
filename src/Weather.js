@@ -73,18 +73,18 @@ if (data.ready){
       
       <p className ="m-1"> <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
    <div className="row">
-    <div className="col-md-3">
+    <div className="col-3">
      <h1 className="d-flex align-items-center"> <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloud" /> {Math.round(data.temperature)}<span>°C</span></h1>
     </div>
    
-        <div className="col-md-4 ps-4">
+        <div className="col-4 ps-4">
             <ul className="list-inline">
         
             <li>Humidity: {data.humidity}%</li>
             <li>Wind: {data.wind} km/h</li>
             </ul>
         </div>
-        <div className="col-md-5 text-end ">
+        <div className="col-5 text-end ">
             <h2 className="d-flex justify-content-end">Weather</h2>
                   <span className="time"> <DateDisplay timestamp={data.time}/><br /> Cloudy</span>
         </div> 
