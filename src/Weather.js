@@ -88,7 +88,7 @@ if (data.ready){
    
         <div className=" col-5  ">
             <ul className="list-inline   ps-0 text-start">
-            <li className="d-block d-sm-none text-capitalize fw-bold"> {data.description}</li>
+            <li className="d-block d-sm-none text-capitalize  fs-5 pb-2 fw-bold"> {data.description}</li>
             <li className="">Humidity: {data.humidity}%</li>
             <li className="">Wind: {data.wind} km/h</li>
             </ul>
