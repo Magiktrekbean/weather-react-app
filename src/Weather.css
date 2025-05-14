@@ -18,35 +18,37 @@ color: #5e5e5e;
 .Weather a{
 text-decoration: none;
 }
+
 .Weather img {
 width: 60px;
+height: 60px;
 
 }
-.Weather h1 {
-font-size: 48px;
-color: #202124;
-font-weight: 400;
-}
 
-.Weather h1 span{
- font-size: 16px;
-position: relative;
-top:-10px;
-padding-left: 3px;
-}
+
 
 .Weather ul{
 color: #5e5e5e;
 font-size: 12px;
-padding-left: 9px;
+margin-right: 30px;
 padding-top: 6px;
+}
+.col-5{
+    width: 160px;
+}
+.col-2{
+    width: 379px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
 }
 .Weather h2 {
 color: #202124;
 font-size: 22px;
 font-weight: 400;
-display: flex;
-justify-content: end;
+
 }
 .Weather .time{
 color: #5e5e5e;
@@ -54,42 +56,36 @@ font-size: 16px;
 
 }
 
-@media (max-width:1124px) {
+@media (max-width:576px) {
 
 
 .Weather p {
     
-    font-size: 12px;
+    font-size: 20px;
 }
 
-.Weather img {
-width: 30px;
 
+.col-5
+{width: 50%;
+margin: 15px 0 30px 0;
 }
-.Weather h1 {
-font-size: 24px;
-
-}
-
-.Weather h1 span{
- font-size: 11px;
-top: -5px;
-}
-
 .Weather ul{
 
-font-size: 11px;
+font-size: 18px;
 
 }
-.Weather h2 {
-
-font-size: 15px;
-
+.Weather li{
+    text-align: end;
+  
 }
+
 .Weather .time{
 
 font-size: 12px;
 
 }
-footer {font-size: 10px;}
+footer {font-size: 16px;}
+.col-2{
+    display: none;
+}
 }

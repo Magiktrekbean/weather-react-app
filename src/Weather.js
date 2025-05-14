@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import axios from "axios";
 import "./Weather.css"
+
+import WeatherUnit from "./WeatherUnit.js"
 export default function Weather (){
 const [data, setData] = useState({
     ready:false,
@@ -72,26 +74,28 @@ if (data.ready){
         <div className="col-md-9">
         <input type="search" onChange={updateCity} placeholder="search for a city..." className="form-control p-3" autoFocus="on"/>
         </div>
-        <div className="col-md-3 d-flex justify-content-end">
+        <div className="col-sm-3 d-flex justify-content-end">
         <input type="submit" value={"Search"} className="btn btn-primary w-100 "/>
       </div></div></form>
       
-      <p className ="m-1"> <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
+      <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
    <div className="row">
-    <div className="col-3">
-     <h1 className="d-flex align-items-center"> <img src={data.iconUrl} alt={data.icon} /> {Math.round(data.temperature)}<span>°C</span></h1>
+    <span className="time d-block d-sm-none fs-6"><div className="text-capitalize fs-1 mb-3 fw-bold">Weather</div><DateDisplay timestamp={data.time}/> </span>
+    <div className="col-5 fix">
+       
+     <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon} /> <WeatherUnit celsius= {data.temperature} /></h1>
     </div>
    
-        <div className="col-4 ps-4">
-            <ul className="list-inline">
-        
-            <li>Humidity: {data.humidity}%</li>
-            <li>Wind: {data.wind} km/h</li>
+        <div className=" col-5  ps-0">
+            <ul className="list-inline   ps-0 text-start">
+            <li className="d-block d-sm-none text-capitalize fw-bold"> {data.description}</li>
+            <li className="">Humidity: {data.humidity}%</li>
+            <li className="">Wind: {data.wind} km/h</li>
             </ul>
         </div>
-        <div className="col-5 text-end ">
-            <h2 className="d-flex justify-content-end">Weather</h2>
-                  <span className="time"> <DateDisplay timestamp={data.time}/><br /> {data.description}</span>
+        <div className="col-2 ">
+            <h2 className="">Weather</h2>
+                  <span className="time  "> <DateDisplay timestamp={data.time}/><div className="text-capitalize">{data.description}</div></span>
         </div> 
 
     </div> <hr/>
