@@ -31,10 +31,10 @@ height: 60px;
 color: #5e5e5e;
 font-size: 12px;
 margin-right: 30px;
-padding-top: 6px;
+padding: 10px 0 0 10px;
 }
 .col-5{
-    width: 160px;
+    width: 147px;
 }
 .col-2{
     width: 379px;
@@ -72,7 +72,7 @@ margin: 15px 0 30px 0;
 .Weather ul{
 
 font-size: 16px;
-padding: 10px 10px 0 0px;
+padding: 10px 0px 0 10px;
 margin: 0;
 }
 .Weather li{

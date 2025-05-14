@@ -86,7 +86,7 @@ if (data.ready){
      <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon} /> <WeatherUnit celsius= {data.temperature} /></h1>
     </div>
    
-        <div className=" col-5  ps-0">
+        <div className=" col-5  ">
             <ul className="list-inline   ps-0 text-start">
             <li className="d-block d-sm-none text-capitalize fw-bold"> {data.description}</li>
             <li className="">Humidity: {data.humidity}%</li>
