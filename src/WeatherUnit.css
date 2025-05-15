@@ -1,7 +1,7 @@
 
 .WeatherUnit {
     display: flex;
-  width: 20%;
+
 
 }
 span .temp {
@@ -17,7 +17,8 @@ font-weight: 400;
 }
 .WeatherUnit a{
 position: relative;
-top: 10px;}
+top: 10px;
+}
 @media (max-width: 1124px) {
     span.temp {
         font-size: 65px!important;
