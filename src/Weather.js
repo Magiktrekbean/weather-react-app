@@ -71,10 +71,10 @@ if (data.ready){
     alert("Choose an area");
 }
     return( <div className="Weather">
-       
-      <form onSubmit={handleSubmit} >
+       <div className="p-3 d-block">
+      <form  onSubmit={handleSubmit} >
         <div className="row">
-        <div className="col-md-9">
+        <div className="col-sm-9">
         <input type="search" onChange={updateCity} placeholder="search for a city..." className="form-control p-3" autoFocus="on"/>
         </div>
         <div className="col-sm-3 d-flex justify-content-end">
@@ -82,9 +82,12 @@ if (data.ready){
       </div></div></form>
       
       <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
+  
+  
    <div className="row ">
     <span className=" d-block d-sm-none "><div className="text-capitalize mb-3 title fw-bold ">Weather</div><span className="time"><DateDisplay  timestamp={data.time}/></span> </span>
-       <div className="col d-flex align-items-start">
+     
+       <div className="col d-flex align-items-start mb-2">
         <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1>
        <div className="col">
 
@@ -94,18 +97,18 @@ if (data.ready){
             <li className="">Wind: {data.wind} km/h</li>
             </ul>   
         </div>
-        </div>
+      
         
         <div className="col small">
             <h2 className="">Weather</h2>
                   <span className="time  "> <DateDisplay timestamp={data.time}/><div className="text-capitalize">{data.description}</div></span>
         </div>   
-    </div> 
+    </div> </div>
 
 <WeatherForecast coordinates ={data.coordinates}/>
-    <hr/>
+ <hr/>
    
-     </div>);} else {
+     </div></div>);} else {
       const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
   
       let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;

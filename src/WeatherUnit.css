@@ -2,7 +2,6 @@
 .WeatherUnit {
     display: flex;
 
-
 }
 span .temp {
     font-size: 48px !important;
