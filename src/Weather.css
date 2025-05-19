@@ -32,11 +32,11 @@ padding: 10px 0 0 10px;
 }
 
 .small{
-    
+
     display: flex;
     justify-content: end;
     flex-direction: column;
-  
+
     text-align: end;
 }
 .Weather h2 {
@@ -45,15 +45,21 @@ font-size: 22px;
 font-weight: 400;
 
 }
-
 .Weather .time{
 color: #5e5e5e;
 font-size: 16px;
 
 }
 .p-3 .d-block{
-    display: none;
+
 }
+div.col-sm.col-6.small{
+    background-color: aqua;
+   
+}
+div.col-sm.d-flex.align-items-start { 
+    background-color: aquamarine;
+    max-width: 100%;}
 
 @media (max-width:767px) {
 
@@ -68,11 +74,12 @@ width: 100%;
 padding: 0;
 }
 .Weather p {
-font-size: 20px;
+ 
+    font-size: 20px;
 }
-h1 {justify-items: flex-start;}
 .title {
     font-size: 35px;
+
 }
 span {padding-left: 0!important;}
 .time span{
@@ -98,7 +105,7 @@ margin: 0 0 0 10px;
 
 
 footer {font-size: 16px;}
-.row .col-sm .small{
+div.col .small{
     display: none;
 }
 }
