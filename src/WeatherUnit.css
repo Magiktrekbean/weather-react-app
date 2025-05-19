@@ -20,7 +20,7 @@ top: 10px;
 }
 @media (max-width: 1124px) {
     span.temp {
-        font-size: 60px!important;
+        font-size: 55px!important;
     }
 
     span.unit {
