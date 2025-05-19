@@ -70,6 +70,7 @@ padding: 0;
 .Weather p {
 font-size: 20px;
 }
+h1 {justify-items: flex-start;}
 .title {
     font-size: 35px;
 }

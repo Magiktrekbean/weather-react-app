@@ -1,4 +1,4 @@
-.App {
+.App, footer {
 max-width: 900px;
 margin: 30px auto;}
-
+footer{text-align: center;}
