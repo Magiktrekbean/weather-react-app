@@ -59,7 +59,9 @@ setData({
     country: response.data.country,
     time: response.data.time,
     iconUrl:response.data.condition.icon_url,
-    icon: response.data.condition.icon
+    icon: response.data.condition.icon,
+    coordinates: response.data.coordinates,
+
 });
 
 } 
@@ -100,7 +102,7 @@ if (data.ready){
         </div>   
     </div> 
 
-<WeatherForecast city ={data.city}/>
+<WeatherForecast coordinates ={data.coordinates}/>
     <hr/>
    
      </div>);} else {
