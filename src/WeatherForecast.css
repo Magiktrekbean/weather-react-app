@@ -11,7 +11,7 @@
 width: 80px;}
 @media (max-width:767px){
 .col-sm{height: 200px;
-padding-left: 0;}
+}
 .WeekDay{font-size:18px;}
 
 .WeekDay-temperature{font-size: 20px;}

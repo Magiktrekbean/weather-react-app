@@ -71,25 +71,26 @@ if (data.ready){
     alert("Choose an area");
 }
     return( <div className="Weather">
+      <div className="container">
        <div className="p-3 d-block">
       <form  onSubmit={handleSubmit} >
         <div className="row">
-        <div className="col-sm-9">
+        <div className="col-sm-9 input">
         <input type="search" onChange={updateCity} placeholder="search for a city..." className="form-control p-3" autoFocus="on"/>
         </div>
-        <div className="col-sm-3 d-flex justify-content-end">
+        <div className="col-sm-3 input d-flex justify-content-end">
         <input type="submit" value={"Search"} className="btn btn-primary w-100 "/>
       </div></div></form>
       
       <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
   
   
-   <div className="row ">
+   <div className="row adjusted ">
     <span className=" d-block d-sm-none "><div className="text-capitalize mb-3 title fw-bold ">Weather</div><span className="time"><DateDisplay  timestamp={data.time}/></span> </span>
      
-       <div className="col d-flex align-items-start mb-2">
-        <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1>
-       <div className="col">
+       <div className="col-sm d-flex align-items-start mb-2">
+        <div className="col-6"><h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1></div> 
+       <div className="col-6 ">
 
             <ul className="list-inline  ps-0 text-start">
             <li className="d-block d-sm-none text-capitalize description fw-bold"> {data.description}</li>
@@ -99,11 +100,11 @@ if (data.ready){
         </div>
       
         
-        <div className="col small">
+        <div className="col-sm small">
             <h2 className="">Weather</h2>
                   <span className="time  "> <DateDisplay timestamp={data.time}/><div className="text-capitalize">{data.description}</div></span>
         </div>   
-    </div> </div>
+    </div> </div></div>
 
 <WeatherForecast coordinates ={data.coordinates}/>
  <hr/>
