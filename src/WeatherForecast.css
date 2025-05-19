@@ -5,3 +5,10 @@
     opacity: .6;
     margin-left: 6px;
 }
+@media (max-width:767px){
+.col-sm{height: 200px;}
+.WeekDay{font-size:30px;}
+.WeekDay-icon img {height: 100px;
+width: 100px;}
+.WeekDay-temperature{font-size: 20px;}
+}
