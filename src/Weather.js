@@ -83,15 +83,15 @@ if (data.ready){
       
       <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
    <div className="row">
-    <span className="time d-block d-sm-none fs-6"><div className="text-capitalize fs-1 mb-3 fw-bold">Weather</div><DateDisplay timestamp={data.time}/> </span>
+    <span className=" d-block d-sm-none "><div className="text-capitalize mb-3 title fw-bold ">Weather</div><span className="time"><DateDisplay  timestamp={data.time}/></span> </span>
     <div className="col-5 fix">
        
-     <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon} /> <WeatherUnit celsius= {data.temperature} /></h1>
+     <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1>
     </div>
    
         <div className=" col-5  ">
             <ul className="list-inline   ps-0 text-start">
-            <li className="d-block d-sm-none text-capitalize fw-bold"> {data.description}</li>
+            <li className="d-block d-sm-none text-capitalize description fw-bold"> {data.description}</li>
             <li className="">Humidity: {data.humidity}%</li>
             <li className="">Wind: {data.wind} km/h</li>
             </ul>

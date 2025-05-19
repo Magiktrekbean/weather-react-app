@@ -31,7 +31,7 @@ height: 85px;
 .Weather ul{
 color: #5e5e5e;
 font-size: 12px;
-margin-right: 30px;
+margin: 10px 30px 0 10px;
 padding: 10px 0 0 10px;
 }
 .col-5{
@@ -64,14 +64,20 @@ font-size: 16px;
     
     font-size: 20px;
 }
+.title {
+    font-size: 35px;
 
+}
+.time span{
+    font-size: 20px;
+}
 
 .col-5
 {width: 50%;
 margin: 15px 0 30px 0;
 padding: 0 5px 0 0;
 }
-.d-block.d-sm-none.text-capitalize.fw-bold{
+.Weather .description{
 font-size: 25px;
 padding: 0 0 0 15px;
 
@@ -88,11 +94,7 @@ margin: 0 0 0 10px;
   
 }
 
-.Weather .time{
 
-font-size: 12px;
-
-}
 footer {font-size: 16px;}
 .col-2{
     display: none;
