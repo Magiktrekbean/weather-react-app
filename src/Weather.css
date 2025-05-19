@@ -45,6 +45,9 @@ font-size: 22px;
 font-weight: 400;
 
 }
+.row .col-sm .small{
+  width: fit-content;
+}
 .Weather .time{
 color: #5e5e5e;
 font-size: 16px;
@@ -67,14 +70,10 @@ width: 100%;
 padding: 0;
 }
 .Weather p {
- 
-    font-size: 20px;
-   
-   
+font-size: 20px;
 }
 .title {
     font-size: 35px;
-
 }
 span {padding-left: 0!important;}
 .time span{
@@ -96,8 +95,6 @@ margin: 0 0 0 10px;
 }
 .Weather li{
     text-align: end;
-
-  
 }
 
 

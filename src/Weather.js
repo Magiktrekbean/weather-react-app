@@ -88,9 +88,9 @@ if (data.ready){
    <div className="row adjusted ">
     <span className=" d-block d-sm-none "><div className="text-capitalize mb-3 title fw-bold ">Weather</div><span className="time"><DateDisplay  timestamp={data.time}/></span> </span>
      
-       <div className="col-sm d-flex align-items-start mb-2">
-        <div className="col-6"><h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1></div> 
-       <div className="col-6 ">
+       <div className="col-sm d-flex align-items-start ">
+        <div className="col-3"><h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1></div> 
+       <div className="col-3">
 
             <ul className="list-inline  ps-0 text-start">
             <li className="d-block d-sm-none text-capitalize description fw-bold"> {data.description}</li>
