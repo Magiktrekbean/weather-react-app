@@ -4,7 +4,7 @@ import "./Weather.css"
 import WeatherForecast from "./WeatherForecast";
 
 import WeatherUnit from "./WeatherUnit.js"
-export default function Weather (){
+export default function Weather (props){
 const [data, setData] = useState({
     ready:false,
     city:"",
@@ -17,7 +17,7 @@ time: null,
 icon:"",
 iconUrl: null,
 });
-const [city, setCity] = useState("");
+const [city, setCity] = useState(props.defaultCity);
 const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
 function handleSubmit(event) {
     event.preventDefault();
@@ -100,12 +100,12 @@ if (data.ready){
         </div>   
     </div> 
 
-  <WeatherForecast />
+<WeatherForecast city ={data.city}/>
     <hr/>
    
      </div>);} else {
       const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
-    let city = "Dry Ridge";
+  
       let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(showData);
       return "Loading";

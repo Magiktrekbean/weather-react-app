@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App"><div className="container">
     
-      <Weather />
+      <Weather defaultCity="Dry Ridge" />
      <footer>This code is
       <a href="https://github.com/Magiktrekbean/weather-react-app"target='blank' className='text-decoration-none'>
      {' '}open sourced on github </a>
