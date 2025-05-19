@@ -48,7 +48,7 @@ function updateCity(event) {
     setCity(event.target.value);
   }
 function showData(response){
-    console.log(response.data);
+
 setData({
     ready:true,
     city:response.data.city,
@@ -82,21 +82,21 @@ if (data.ready){
       </div></div></form>
       
       <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
-   <div className="row">
+   <div className="row ">
     <span className=" d-block d-sm-none "><div className="text-capitalize mb-3 title fw-bold ">Weather</div><span className="time"><DateDisplay  timestamp={data.time}/></span> </span>
-    <div className="col-5 fix">
-       
-     <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1>
-    </div>
-   
-        <div className=" col-5  ">
-            <ul className="list-inline   ps-0 text-start">
+       <div className="col d-flex align-items-start">
+        <h1 className="d-flex align-items-center "> <img src={data.iconUrl} alt={data.icon}/> <WeatherUnit celsius= {data.temperature} /></h1>
+       <div className="col">
+
+            <ul className="list-inline  ps-0 text-start">
             <li className="d-block d-sm-none text-capitalize description fw-bold"> {data.description}</li>
             <li className="">Humidity: {data.humidity}%</li>
             <li className="">Wind: {data.wind} km/h</li>
-            </ul>
+            </ul>   
         </div>
-        <div className="col-2 ">
+        </div>
+        
+        <div className="col small">
             <h2 className="">Weather</h2>
                   <span className="time  "> <DateDisplay timestamp={data.time}/><div className="text-capitalize">{data.description}</div></span>
         </div>   

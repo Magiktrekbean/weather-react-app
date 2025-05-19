@@ -5,11 +5,12 @@
     opacity: .6;
     margin-left: 6px;
 }
+.WeekDay{font-size: 20px;}
 .WeekDay-icon img {height: 80px;
 width: 80px;}
 @media (max-width:767px){
-.col-sm{height: 200px;}
-.WeekDay{font-size:25px;}
+.col-sm-2{height: 200px;}
+.WeekDay{font-size:18px;}
 
 .WeekDay-temperature{font-size: 20px;}
 }

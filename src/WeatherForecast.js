@@ -12,7 +12,7 @@ let [forecast, setForecast] = useState(null);
     setLoaded(true);}
 useEffect (()=>{setLoaded (false);}, [props.coordinates]);
    if (loaded){
-    console.log(forecast);
+  
     return (  <div className="WeatherForecast">
         <div className="row ">
             {forecast.map(function(dailyForecast,index)
