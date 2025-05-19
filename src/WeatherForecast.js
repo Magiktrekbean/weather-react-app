@@ -16,7 +16,7 @@ let [forecast, setForecast] = useState(null);
     return (  <div className="WeatherForecast">
         <div className="row">
             {forecast.map(function(dailyForecast,index)
-            {if(index<6){return(<div className="col-sm" key = {index}>
+            {if(index<5){return(<div className="col-sm" key = {index}>
        <WeatherForecastData data = {dailyForecast}/>
                 </div>);}
             return null;})}
