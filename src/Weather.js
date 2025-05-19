@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import "./Weather.css"
+import WeatherForecast from "./WeatherForecast";
 
 import WeatherUnit from "./WeatherUnit.js"
 export default function Weather (){
@@ -96,9 +97,12 @@ if (data.ready){
         <div className="col-2 ">
             <h2 className="">Weather</h2>
                   <span className="time  "> <DateDisplay timestamp={data.time}/><div className="text-capitalize">{data.description}</div></span>
-        </div> 
+        </div>   
+    </div> 
 
-    </div> <hr/>
+  <WeatherForecast />
+    <hr/>
+   
      </div>);} else {
       const apiKey =`594b61tf99f8e42c306162ocb32f8ac6`;
     let city = "Dry Ridge";
