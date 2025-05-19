@@ -45,9 +45,7 @@ font-size: 22px;
 font-weight: 400;
 
 }
-.row .col-sm .small{
-  width: fit-content;
-}
+
 .Weather .time{
 color: #5e5e5e;
 font-size: 16px;

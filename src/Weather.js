@@ -73,13 +73,13 @@ if (data.ready){
     return( <div className="Weather">
       <div className="container">
        <div className="p-3 d-block">
-      <form  onSubmit={handleSubmit} >
+      <form  onSubmit={handleSubmit}  >
         <div className="row">
         <div className="col-sm-9 input">
-        <input type="search" onChange={updateCity} placeholder="search for a city..." className="form-control p-3" autoFocus="on"/>
+        <input type="search" onChange={updateCity} placeholder="search for a city..." className="form-control p-3" id="city-search" autoFocus="on"/>
         </div>
         <div className="col-sm-3 input d-flex justify-content-end">
-        <input type="submit" value={"Search"} className="btn btn-primary w-100 "/>
+        <input type="submit" value={"Search"} className="btn btn-primary w-100 " id="press-search"/>
       </div></div></form>
       
       <p > <span>Results for</span> {data.city}, {data.country} · <a href="/" onClick={showAlert}>Choose area</a></p>
