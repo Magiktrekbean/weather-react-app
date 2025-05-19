@@ -15,9 +15,11 @@ let [forecast, setForecast] = useState(null);
     console.log(forecast);
     return (  <div className="WeatherForecast">
         <div className="row">
-            <div className="col">
-       <WeatherForecastData data = {forecast[1]}/>
-                </div>
+            {forecast.map(function(dailyForecast,index)
+            {if(index<5){return(<div className="col" key = {index}>
+       <WeatherForecastData data = {dailyForecast}/>
+                </div>);}
+            return null;})}
             </div>
         </div>)} else {
 
