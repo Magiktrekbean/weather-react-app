@@ -20,8 +20,8 @@ text-decoration: none;
 }
 
 .Weather img {
-width: 85px;
-height: 85px;
+width: 80px;
+height: 90px;
 }
 
 .Weather ul{
@@ -43,6 +43,7 @@ padding: 10px 0 0 10px;
 color: #202124;
 font-size: 22px;
 font-weight: 400;
+
 
 }
 .Weather .time{
@@ -86,7 +87,9 @@ span {padding-left: 0!important;}
     font-size: 20px;
 }
 
-
+h1{
+    padding-top: 10px;
+    margin-bottom: 0;}
 .col-sm{padding: 0;}
 .Weather .description{
 font-size: 20px;
