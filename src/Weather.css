@@ -51,9 +51,7 @@ color: #5e5e5e;
 font-size: 16px;
 
 }
-.p-3 .d-block{
 
-}
 div.col-sm.col-6.small{
     background-color: aqua;
    
@@ -70,9 +68,10 @@ div.container{ padding: 0!important;}
     margin: 0 auto;
     padding-left: 0;  
 }
+div.col{padding-right: 0;}
 .Weather form{
 width: 100%;
-padding: 0;
+
 }
 .Weather p {
  
@@ -82,7 +81,7 @@ padding: 0;
     font-size: 35px;
 
 }
-span {padding-left: 0!important;}
+span {padding: 0;}
 .time span{
     font-size: 20px;
 }
@@ -93,14 +92,14 @@ h1{
 .col-sm{padding: 0;}
 .Weather .description{
 font-size: 20px;
-padding: 0 0 0 15px;
+
 
 }
 .Weather ul{
 
 font-size: 13px;
 padding: 10px 0 0 0;
-margin: 0 0 0 10px;
+margin: 0 5px 0 0;
 }
 .Weather li{
     text-align: end;
